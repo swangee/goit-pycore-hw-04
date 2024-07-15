@@ -18,6 +18,8 @@ def parse_input(user_input):
 def main():
     print("Welcome to the assistant bot!")
 
+    # Each handler must accept two arguments: args and contacts dictionary and return tuple with the output
+    # and the termination flag if program should exit
     command_to_handler = {
         "close": handlers.exit,
         "exit": handlers.exit,
